@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="../components/componente-cadastro/componente-cadastro.css" />
+<div class='container'>
+   <div class='card'>
+      <h1 class="cadastro-title"> Cadastrar </h1>
+
+      <div id='msgError'></div>
+      <div id='msgSuccess'></div>
+
+      <div class="label-float">
+         <input type="text" id="nome" placeholder=" " required>
+         <label id="labelNome" for="nome">Nome</label>
+      </div>
+
+      <div class="label-float">
+         <input type="text" id="usuario" placeholder=" " required>
+         <label id="labelUsuario" for="usuario">Usuário</label>
+      </div>
+
+      <div class="label-float">
+         <input type="password" id="senha" class="senha" placeholder=" " required>
+         <label id="labelSenha" for="senha">Senha</label>
+         <i id="verSenha" class="ver fa fa-eye" aria-hidden="true"></i>
+
+      </div>
+
+      <div class="label-float">
+         <input type="password" id="confirmSenha" placeholder=" " required>
+         <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+         <i id="verSenha" class="ver fa fa-eye" aria-hidden="true"></i>
+      </div>
+
+      <div class='justify-center'>
+         <button class="cadastro-button" onclick='cadastrar()'>Cadastrar</button>
+      </div>
+      <div class="justify-center login-text">Já tem uma conta? <button class=trocar-login>Entrar</button></div>
+
+   </div>
+
+   <div class='card-b'>
+      <h1 class=cadastro-title> Entrar </h1>
+      
+      <div id='msgError'></div>
+      
+      <div class='label-float'>
+        <input type='text' id='usuariolog' paceholder='' required>
+        <label id='userLabel' for='usuariolog'>Usuario</label>
+      </div>
+      
+      <div class='label-float'>
+        <input type='password' id='senhalog' paceholder='' required>
+        <label id='senhaLabel' for='senhalog'>Senha</label>
+        <i class="ver fa fa-eye" aria-hidden="true"></i>
+      </div>
+      
+      <div class='justify-center'>
+        <button class="cadastro-button" onclick='entrar()'>Entrar</button>
+      </div>
+      
+      
+      <div class="justify-center login-text">Não tem uma conta? <button class=trocar-login>Cadastre-se</button></div>
+      
+    </div>
+</div>
+<script src="/components/componente-cadastro/componente-cadastro.js"></script>
