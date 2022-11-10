@@ -113,7 +113,7 @@ function cadastrar(){
 function entrar(){
   let usuario = document.querySelector('#usuariolog')
   let userLabel = document.querySelector('#userLabel')
-  
+  document.querySelector
   let senha = document.querySelector('#senhalog')
   let senhaLabel = document.querySelector('#senhaLabel')
   
